@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="far fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+       
+    </section>
+   
+    <!-- ----contact us page------- -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121656.25373231898!2d75.84857628465052!3d17.661620501252532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5d082b54ac5d5%3A0x3c719de6c83710d0!2sSolapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1622526689108!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Solapur, Maharashtra, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+91 0123456789</h5>
+                        <p>Monday To Saturday, 10 AM To 8 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5>info@Eduford.com</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <input type="text"  name="subject" placeholder="Enter Your Subject" required>
+                    <textarea  rows="8" name="message" placeholder="Message"  required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- -----Footer----- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugit asperiores reiciendis iusto
+            consectetur, est sit error ab officiis! <br> Delectus voluptatibus asperiores dolorum dolor ad illo
+            architecto sunt repellat ipsum, libero cum ratione cumque.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made With  <i class="far fa-heart"></i>  By Sahil</p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- ----- Java Script------ -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0"
+        }
+        function hidemenu() {
+            navlinks.style.right = "-400px"
+        }
+
+    </script>
+</body>
+
+</html>
